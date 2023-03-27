@@ -1,6 +1,6 @@
 # **KRISHIAAN**
 
-## A web application for the farmers to sell their produce and consumers to buy produce directly and at a fair price.
+## A web application for the farmers to sell their produce and consumers to buy produce directly and at a fair price. The ecosystem would offer a peer to peer transaction service  between the producer and the consumer and would primarily eliminate corruption by the inclusion of blockchain. 
 
 <br/>
 
