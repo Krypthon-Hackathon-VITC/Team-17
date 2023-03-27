@@ -1,11 +1,18 @@
 import { createContext, useContext, useState } from "react";
 import Web3 from "web3";
-import { greeterContractAbi, contractAddress } from "../utils/constants";
+import {
+  greeterContractAbi,
+  greeterContractAddress,
+  authContractAbi,
+  authContractAddress,
+} from "../utils/constants";
 
 const initialState = {
   web3: null,
   account: null,
   greeterContract: null,
+  authContract: null,
+  balance: null,
   setAccountDetails: () => {},
 };
 
@@ -14,15 +21,29 @@ const ContractContext = createContext(initialState);
 const ContractProvider = ({ children }) => {
   const web3 = new Web3(window.ethereum || "http://localhost:8545");
 
+  const [account, setAccount] = useState(null);
+  const [balance, setBalance] = useState(null);
+
   const greeterContract = new web3.eth.Contract(
     greeterContractAbi,
-    contractAddress
+    greeterContractAddress
   );
 
-  const [account, setAccount] = useState(null);
+  const authContract = new web3.eth.Contract(
+    authContractAbi,
+    authContractAddress
+  );
 
   const setAccountDetails = async () => {
     const accounts = await web3.eth.getAccounts();
+    if (accounts.length === 0) {
+      alert("Please connect to Metamask");
+      return;
+    }
+    const balance = await web3.eth.getBalance(accounts[0]);
+
+    setBalance(balance);
+
     setAccount(accounts[0]);
   };
 
@@ -33,6 +54,8 @@ const ContractProvider = ({ children }) => {
         setAccountDetails,
         greeterContract,
         web3,
+        balance,
+        authContract,
       }}
     >
       {children}
