@@ -4,21 +4,39 @@
 
 <br/>
 
-## Available Scripts To Run The Project
+# Dappazon
+
+## Technology Stack & Tools
+
+- Solidity (Writing Smart Contracts & Tests)
+- Javascript (React & Testing)
+- [Hardhat](https://hardhat.org/) (Development Framework)
+- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
+- [React.js](https://reactjs.org/) (Frontend Framework)
+
+## Requirements For Initial Setup
+- Install [NodeJS](https://nodejs.org/en/)
+
+## Setting Up
+### 1. Clone/Download the Repository
+
+### 2. Install Dependencies:
+`$ npm install`
+
+### 3. Run tests
+`$ npx hardhat test`
+
+### 4. Start Hardhat node
+`$ npx hardhat node`
+
+### 5. Run deployment script
+In a separate terminal execute:
+`$ npx hardhat run ./scripts/deploy.js --network localhost`
+
+### 6. Start frontend
+`$ npm run start`
 
 
-### `npm start`
-
-- Starts The React Application
-
-### `npm compile`
-
-- Compiles the Hardhat Smart Contracts
-
-### `npm deploy:node`
-- Generating the Hardhat Node
-
-
-### `npm deploy`
-- Deploying the Smart Contracts on the Hardhat Node
-
+The landing and the market place are made in two different folder and will be hosted on different domains so you need to run both the files seperately.
+Run the market place on port 3000
+and landing on port 3001.
