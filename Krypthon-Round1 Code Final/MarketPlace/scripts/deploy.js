@@ -4,39 +4,46 @@
 // You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
-const hre = require("hardhat")
-const { items } = require("../src/items.json")
+const hre = require("hardhat");
+const { items } = require("../src/items.json");
 
 const tokens = (n) => {
-  return ethers.utils.parseUnits(n.toString(), 'ether')
-}
+  return ethers.utils.parseUnits(n.toString(), "ether");
+};
 
 async function main() {
   // Setup accounts
-  const [deployer] = await ethers.getSigners()
+  const [deployer] = await ethers.getSigners();
 
   // Deploy Dappazon
-  const Dappazon = await hre.ethers.getContractFactory("Dappazon1")
-  const dappazon = await Dappazon.deploy()
-  await dappazon.deployed()
+  const Dappazon = await hre.ethers.getContractFactory("Dappazon1");
+  const dappazon = await Dappazon.deploy();
+  await dappazon.deployed();
 
-  console.log(`Deployed Dappazon Contract at: ${dappazon.address}\n`)
+  const Auth = await hre.ethers.getContractFactory("Auth");
+  const auth = await Auth.deploy();
+  await auth.deployed();
+
+  console.log(`Deployed Dappazon Contract at: ${dappazon.address}\n`);
+  console.log(`Deployed Auth Contract at: ${auth.address}\n`);
 
   // Listing items...
   for (let i = 0; i < items.length; i++) {
-    const transaction = await dappazon.connect(deployer).list(
-      items[i].id,
-      items[i].name,
-      items[i].category,
-      items[i].image,
-      tokens(items[i].price),
-      items[i].rating,
-      items[i].stock,
-    )
+    const transaction = await dappazon
+      .connect(deployer)
+      .list(
+        items[i].id,
+        items[i].name,
+        items[i].category,
+        items[i].image,
+        tokens(items[i].price),
+        items[i].rating,
+        items[i].stock
+      );
 
-    await transaction.wait()
+    await transaction.wait();
 
-    console.log(`Listed item ${items[i].id}: ${items[i].name}`)
+    console.log(`Listed item ${items[i].id}: ${items[i].name}`);
   }
 }
 
