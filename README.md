@@ -14,6 +14,9 @@
 - [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
 - [React.js](https://reactjs.org/) (Frontend Framework)
 
+//webockets and nodejs for chat application backend 
+//chat frontend is made on react.js
+
 ## Requirements For Initial Setup
 - Install [NodeJS](https://nodejs.org/en/)
 
@@ -39,4 +42,5 @@ In a separate terminal execute:
 
 The landing and the market place are made in two different folder and will be hosted on different domains so you need to run both the files seperately.
 Run the market place on port 3000
-and landing on port 3001.
+and landing on port 3002.
+run chat client on port 3001.
