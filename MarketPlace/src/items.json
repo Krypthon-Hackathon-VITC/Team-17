@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Gram",
+      "category": "rabi",
+      "image": "https://ipfs.io/ipfs/QmdeQxhpNMKRmpjNXwU3rikbySmeWtfRW3GvAYX1qv2e27?filename=gram.jpg",
+      "price": "1",
+      "rating": 4,
+      "stock": 100
+    },
+    {
+      "id": 2,
+      "name": "Mustard",
+      "category": "rabi",
+      "image": "https://ipfs.io/ipfs/QmXNPtpFZWHM7cKbeidVWuaZsQYsKqZyBYnubG6jJtgie5?filename=mustard.jpg",
+      "price": "2",
+      "rating": 5,
+      "stock": 60
+    },
+    {
+      "id": 3,
+      "name": "Wheat",
+      "category": "rabi",
+      "image": "https://ipfs.io/ipfs/QmYgqTocHrcJcPyGCyqrC3oi8mFaQzbjAzjK7EQaVmri8X?filename=wheat.jpg",
+      "price": "0.25",
+      "rating": 2,
+      "stock": 74
+    },
+    {
+      "id": 4,
+      "name": "Pulses",
+      "category": "kharif",
+      "image": "https://ipfs.io/ipfs/QmWnivcCpxMEB9i7RqinYDLLZcqa5XTJ5KZfC5yEwFWrYK?filename=pulses.jpg",
+      "price": "0.25",
+      "rating": 5,
+      "stock": 30
+    },
+    {
+      "id": 5,
+      "name": "Rice",
+      "category": "kharif",
+      "image": "https://ipfs.io/ipfs/Qmf2xYep6hmpZnjxZVL7a1CAdq4k3gXYhJ9asZDhZhg3kX?filename=rice.jpg",
+      "price": "0.10",
+      "rating": 4,
+      "stock": 120
+    },
+    {
+      "id": 6,
+      "name": "Groundnut",
+      "category": "kharif",
+      "image": "https://ipfs.io/ipfs/QmezVDAhitKE85T6wrkoejTpQPmSArTjMRcMTi4aF96FQW?filename=groundnut.jpg",
+      "price": "1.25",
+      "rating": 4,
+      "stock": 60
+    },
+    {
+      "id": 7,
+      "name": "Fruit Basket",
+      "category": "fruits and vegetables",
+      "image": "https://ipfs.io/ipfs/QmaS7U9QJC5TvDd2dmXnHKVYGh6uVaCDYU1bowhGeusvMx?filename=fbasket.jpg",
+      "price": "0.05",
+      "rating": 4,
+      "stock": 30
+    },
+    {
+      "id": 8,
+      "name": "Vegetable Basket",
+      "category": "fruits and vegetables",
+      "image": "https://ipfs.io/ipfs/Qmatc8A2RWDmLdEFed6SYqre4LkXZcfXhyDfx7reM1QXqu?filename=vbasket.jpg",
+      "price": "0.20",
+      "rating": 4,
+      "stock": 0
+    },
+    {
+      "id": 9,
+      "name": "Fruit and Vegetable Set",
+      "category": "fruits and vegetables",
+      "image": "https://ipfs.io/ipfs/QmZCUTsjCAMt2LuQsXYEDhTLMiosuqoYm66vApTDWYzxm8?filename=FandV.jpg",
+      "price": "0.15",
+      "rating": 3,
+      "stock": 125
+    }
+  ]
+}

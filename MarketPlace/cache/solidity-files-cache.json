@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Atharv\\Downloads\\Team-17-main\\Team-17-main\\Krypthon-Round1 Code Final\\MarketPlace\\contracts\\Auth.sol": {
+      "lastModificationDate": 1679998730114,
+      "contentHash": "79fca4417f103cc075b39d1f2b53b65d",
+      "sourceName": "contracts/Auth.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Auth"
+      ]
+    },
+    "C:\\Users\\Atharv\\Downloads\\Team-17-main\\Team-17-main\\Krypthon-Round1 Code Final\\MarketPlace\\contracts\\Dappazon.sol": {
+      "lastModificationDate": 1679998730146,
+      "contentHash": "7332966fe73efe5fec631a957d717cff",
+      "sourceName": "contracts/Dappazon.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Dappazon1"
+      ]
+    }
+  }
+}
