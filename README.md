@@ -14,8 +14,8 @@
 - [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
 - [React.js](https://reactjs.org/) (Frontend Framework)
 
-webockets and nodejs for chat application backend .
-chat frontend is made on react.js
+-webockets and nodejs for chat application backend .
+
 
 ## Requirements For Initial Setup
 - Install [NodeJS](https://nodejs.org/en/)
